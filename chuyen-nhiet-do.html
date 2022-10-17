@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi nhiệt đọ</title>
+</head>
+<body>
+    <h2>Chuyển đổi nhiệt độ</h2>
+        <p>Nhiệt độ F là:</p>
+    <input type="number" id="value"
+    oninput="tinhnhietdo(this.value)">
+    <p>Nhiệt độ C là:</p>
+    <p id="ketqua"></p>
+<script>
+    function tinhnhietdo(giatri) {
+        giatri = parseFloat(giatri);
+        document.getElementById("ketqua").innerHTML = (giatri - 32) / 1.8;
+    }
+</script>
+</body>
+</html>
